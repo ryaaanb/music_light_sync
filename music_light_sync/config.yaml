@@ -9,8 +9,15 @@ arch:
   - amd64
   - aarch64
   - armv7
+
+# Permissions
+host_network: true
+privileged:
+  - api
+
 options:
-  lights: []
+  selected_lights: []
+
 schema:
-  lights:
+  selected_lights:
     - str
