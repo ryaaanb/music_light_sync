@@ -5,15 +5,12 @@ description: "Sync your lights with music"
 startup: "application"
 boot: "auto"
 homeassistant: "2023.0.0"
+auth_api: true
+host_network: true
 arch:
   - amd64
   - aarch64
   - armv7
-
-# Permissions
-host_network: true
-privileged:
-  - api
 
 options:
   selected_lights: []
