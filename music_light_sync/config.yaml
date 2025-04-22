@@ -1,22 +1,16 @@
 name: "Music Light Sync"
 version: "1.0"
 slug: "music_light_sync"
-description: "Sync selected lights with music"
+description: "Sync your lights with music"
 startup: "application"
 boot: "auto"
 homeassistant: "2023.0.0"
 arch:
   - amd64
-  - armv7
   - aarch64
-audio: true
-
+  - armv7
 options:
   lights: []
- 
 schema:
   lights:
-    - selector:
-        entity:
-          domain: light
-          multiple: true
+    - str
