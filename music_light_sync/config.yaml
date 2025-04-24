@@ -1,20 +1,18 @@
 name: "Music Light Sync"
-version: "1.0"
+version: "1.4"
 slug: "music_light_sync"
 description: "Sync your lights with music"
 startup: "application"
 boot: "auto"
 homeassistant: "2023.0.0"
 auth_api: true
-host_network: true
+homeassistant_api: true
+ingress: true
+ingress_port: 5000
+ingress_entry: /
+panel_icon: mdi:music
+panel_title: "Music Sync"
 arch:
   - amd64
   - aarch64
   - armv7
-
-options:
-  selected_lights: []
-
-schema:
-  selected_lights:
-    - str
